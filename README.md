@@ -20,16 +20,42 @@ A simple Todo List application built with Flutter for Android.
 
 1. Clone this repository
 2. Navigate to the project directory
-3. Run `flutter pub get` to install dependencies
-4. Run `flutter run` to start the app on your device or emulator
+3. Install Flutter SDK from https://flutter.dev/docs/get-started/install
+4. Add Flutter to your PATH
+5. Run `flutter pub get` to install dependencies
+6. Run `flutter run` to start the app on your device or emulator
+
+### Running on macOS
+
+If you're using macOS, follow these steps:
+
+1. Install Flutter SDK:
+   ```
+   brew install flutter
+   ```
+
+2. Verify installation:
+   ```
+   flutter doctor
+   ```
+
+3. Install dependencies:
+   ```
+   flutter pub get
+   ```
+
+4. Run the app:
+   ```
+   flutter run
+   ```
 
 ## Project Structure
 
-- `app/main.dart` - Entry point of the application
-- `app/models/task.dart` - Task model class with JSON serialization
-- `app/components/TodoItem.dart` - Reusable widget for displaying tasks
-- `app/components/Todo.dart` - Main Todo screen with task management logic
-- `app/utils/task_storage.dart` - Utility for saving/loading tasks with SharedPreferences
+- `lib/main.dart` - Entry point of the application
+- `lib/models/task.dart` - Task model class with JSON serialization
+- `lib/components/todo_item.dart` - Reusable widget for displaying tasks
+- `lib/components/todo_screen.dart` - Main Todo screen with task management logic
+- `lib/utils/task_storage.dart` - Utility for saving/loading tasks with SharedPreferences
 
 ## Dependencies
 
